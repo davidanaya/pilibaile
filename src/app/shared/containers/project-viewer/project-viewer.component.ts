@@ -20,11 +20,13 @@ export class ProjectViewerComponent implements OnInit {
     private route: ActivatedRoute,
     private projectsService: ProjectsService
   ) {
-    this.project$ = this.projectsService.projectsById$.pipe(
-      filter(projects => projects),
-      map(projects => projects[this.id])
-    );
-    this.route.params.subscribe((data: Params) => (this.id = data.id));
+    // this.route.params.subscribe(
+    //   (data: Params) =>
+    //     (this.project$ = this.projectsService.projectsById$.pipe(
+    //       filter(projects => projects),
+    //       map(projects => projects[data.id])
+    //     ))
+    // );
   }
 
   ngOnInit() {}

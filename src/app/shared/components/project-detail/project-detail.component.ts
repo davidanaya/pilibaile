@@ -6,12 +6,9 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./project-detail.component.css"]
 })
 export class ProjectDetailComponent implements OnInit {
-
   @Input() project: any;
-  
-  constructor() { }
 
-  ngOnInit() {
-  }
+  constructor() {}
 
+  ngOnInit() {}
 }
