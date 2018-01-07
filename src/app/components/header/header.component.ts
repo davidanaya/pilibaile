@@ -13,10 +13,9 @@ export interface INav {
   styleUrls: ["./header.component.scss"]
 })
 export class HeaderComponent implements OnInit {
-  title = "PILI BAILE";
+  title: INav = { link: "/", name: "PILI BAILE", exact: true };
 
   nav: INav[] = [
-    { link: "/", name: "Home", exact: true },
     { link: "/about-me", name: "About", exact: true },
     { link: "/architecture-visualisation", name: "Archviz", exact: true },
     { link: "/interior-architecture", name: "Interior design", exact: true }
