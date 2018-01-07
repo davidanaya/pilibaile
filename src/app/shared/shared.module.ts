@@ -2,6 +2,8 @@ import { NgModule, ModuleWithProviders } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 
+import { MatToolbarModule } from "@angular/material";
+
 // service
 import { ProjectsService } from "./services/projects.service";
 

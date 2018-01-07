@@ -9,7 +9,7 @@ import { ProjectsService } from "../../services/projects.service";
 @Component({
   selector: "pb-project-viewer",
   templateUrl: "./project-viewer.component.html",
-  styleUrls: ["./project-viewer.component.css"]
+  styleUrls: ["./project-viewer.component.scss"]
 })
 export class ProjectViewerComponent implements OnInit {
   project$: Observable<any>;

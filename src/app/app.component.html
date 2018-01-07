@@ -1,11 +1,2 @@
-<div class="app">
-  <nav>
-    <a *ngFor="let item of nav" [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: item.exact }">
-      {{ item.name }}
-    </a>
-  </nav>
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <router-outlet></router-outlet>
-</div>
+<pb-header></pb-header>
+<router-outlet></router-outlet>

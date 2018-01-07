@@ -1,23 +1,18 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-
-import { MatButtonModule } from "@angular/material";
 
 // components
 import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./components/header/header.component";
 
 // modules
 import { AppRoutingModule } from "./app-routing.module";
 import { SharedModule } from "./shared/shared.module";
 
-export const material = [MatButtonModule];
-
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
-    ...material,
     AppRoutingModule,
     SharedModule.forRoot()
   ],
