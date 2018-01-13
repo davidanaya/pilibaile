@@ -1,0 +1,26 @@
+<header class="wrapper">
+  <nav class="flex-nav">
+    <div class="menu__icon">
+      <button [matMenuTriggerFor]="menu">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let item of nav" class="nav">
+          <a [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: item.exact }">
+            {{ item.name }}
+          </a>
+        </button>
+        <button mat-menu-item *ngFor="let item of social" class="social">
+          <a [href]="item.link">
+            <i class="fa fa-{{item.icon}}" aria-hidden="true"></i>
+          </a>
+        </button>
+      </mat-menu>
+    </div>
+    <div class="title">
+      <a [routerLink]="title.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: title.exact }">
+        {{ title.name }}
+      </a>
+    </div>
+  </nav>
+</header>

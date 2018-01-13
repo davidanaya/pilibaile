@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+.flex-nav ul {
+  background-color: rgba(192, 192, 192, 0.5);
+  list-style: none;
+  display: flex;
+  align-items: center;
+
+  li {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+
+    &.title {
+      flex: 1 1 40%;
+      justify-content: center;
+    }
+
+    &.nav {
+      flex: 3;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .flex-nav ul {
+    flex-wrap: wrap;
+
+    li {
+      &.title {
+        flex: 1 1 30%;
+      }
+      &.nav {
+        flex: 4;
+      }
+    }
+  }
+}

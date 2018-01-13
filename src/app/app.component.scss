@@ -1,7 +1,22 @@
-pb-header {
+pb-nav-header,
+pb-nav-menu {
   width: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
   z-index: 9999;
+}
+
+pb-nav-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  pb-nav-header {
+    display: none;
+  }
+
+  pb-nav-menu {
+    display: block;
+  }
 }
